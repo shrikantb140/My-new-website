@@ -132,3 +132,28 @@
         flex: 1 0 calc(25% - 20px); /* Four posts per row on desktop */
     }
 }
+
+/* Reduce header height on mobile */
+@media (max-width: 600px) {
+    .movie-header {
+            padding: 10px; /* Adjust padding as needed */
+                }
+                    
+                        /* Style for the responsive navigation menu */
+                            .navbar ul {
+                                    display: none;
+                                            position: absolute;
+                                                    top: 60px; /* Adjust the top position based on your header height */
+                                                            left: 0;
+                                                                    background-color: #1a1a1a;
+                                                                            width: 100%;
+                                                                                    text-align: center;
+                                                                                        }
+
+                                                                                            .navbar.show-menu ul {
+                                                                                                    display: block;
+                                                                                                        }
+
+                                                                                                            .navbar ul li {
+                                                                                                                    margin: 10px 0;
+                                                                                                                        }
