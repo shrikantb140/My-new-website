@@ -40,4 +40,63 @@
                                                                     .navbar a:hover {
                                                                         color: #00d5ff; /* Change color on hover */
                                                                         }
+                                                                        /* Styles for the movie post section */
+.movie-post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.movie-post-image img {
+    max-width: 200px;
+    height: auto;
+}
+
+.movie-post-content {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.movie-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.movie-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.movie-button {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Style the button on hover */
+.movie-button:hover {
+    background-color: #ff4d3d;
+}
+
+/* Styles for the movie details */
+.movie-details {
+    display: none; /* Hide by default */
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Show the movie details when the show-details class is applied */
+.movie-details.show-details {
+    display: block;
+}
                                                                         
