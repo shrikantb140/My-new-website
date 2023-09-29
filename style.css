@@ -73,6 +73,7 @@
 .content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center; /* Center posts horizontally on desktop */
     gap: 20px;
     padding: 20px;
 }
@@ -83,11 +84,11 @@
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
-    max-width: 300px;
+    width: 100%; /* Take up the full width on mobile */
     cursor: pointer;
     transition: transform 0.3s ease;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Add a slight shadow */
 }
-
 .post img {
     max-width: 100%;
 }
@@ -96,11 +97,13 @@
 .post-title {
     margin-top: 10px;
     font-size: 18px;
+    text-align: center; /* Center titles on mobile */
 }
 
 /* Hide post content by default */
 .post-content {
     display: none;
+    padding: 10px;
 }
 
 /* Style the post content */
@@ -111,4 +114,15 @@
 /* Change cursor style on hover */
 .post:hover {
     transform: scale(1.05);
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+    .content {
+        padding: 10px; /* Reduce padding on mobile */
+    }
+
+    .post {
+        width: calc(50% - 20px); /* Two posts per row on mobile with a gap */
+    }
 }
