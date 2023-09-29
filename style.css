@@ -7,8 +7,8 @@
 
             /* Style the header */
             .movie-header {
-            background-color: #ce0000;
-            color: #2a2626;
+            background-color: #2212b4;
+            color: #b90101;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -38,6 +38,6 @@
                                                                     }
 
                                                                     .navbar a:hover {
-                                                                        color: #ff0385; /* Change color on hover */
+                                                                        color: #00d5ff; /* Change color on hover */
                                                                         }
                                                                         
