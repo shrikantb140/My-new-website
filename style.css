@@ -73,7 +73,6 @@
 .content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center posts horizontally on desktop */
     gap: 20px;
     padding: 20px;
 }
