@@ -83,7 +83,7 @@
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
-    
+    flex: 1; /* Equal Width for all posts */
     cursor: pointer;
     transition: transform 0.3s ease;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Add a slight shadow */
@@ -122,6 +122,13 @@
     }
 
     .post {
-        width: calc(50% - 20px); /* Two posts per row on mobile with a gap */
+        flex: 1 0 calc(50% - 20px); /* Two posts per row on mobile with a gap */
+    }
+}
+
+    /* Responsive design for tablets and desktops */
+@media (min-width: 601px) {
+    .post {
+        flex: 1 0 calc(25% - 20px); /* Four posts per row on desktop */
     }
 }
