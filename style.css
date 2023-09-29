@@ -7,17 +7,17 @@
 
             /* Style the header */
             .movie-header {
-                background-color: #1a1a1a;
-                    color: #fff;
-                        display: flex;
-                            justify-content: space-between;
-                                align-items: center;
-                                    padding: 20px;
-                                    }
+            background-color: #ce0000;
+            color: #2a2626;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            }
 
                                     /* Style the logo */
                                     .logo img {
-                                        max-width: 150px;
+                                        max-width: 130px;
                                         }
 
                                         /* Style the navigation menu */
