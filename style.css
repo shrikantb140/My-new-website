@@ -67,3 +67,48 @@
 .header-search button:hover {
     background-color: #ff4d3d;
 }
+
+
+/* Style the content section */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Style each post */
+.post {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 300px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.post img {
+    max-width: 100%;
+}
+
+/* Style the post titles */
+.post-title {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Hide post content by default */
+.post-content {
+    display: none;
+}
+
+/* Style the post content */
+.post-content p {
+    font-size: 16px;
+}
+
+/* Change cursor style on hover */
+.post:hover {
+    transform: scale(1.05);
+}

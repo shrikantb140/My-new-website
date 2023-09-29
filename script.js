@@ -4,7 +4,8 @@ const moviePosts = document.querySelectorAll('.movie-post');
 // Add click event listeners to each movie post
 moviePosts.forEach((post) => {
     post.addEventListener('click', () => {
-        // Toggle a class to display/hide additional details
-        post.classList.toggle('show-details');
+        // Toggle the visibility of the post content
+        const content = post.querySelector('.post-content');
+        content.classList.toggle('show-content');
     });
 });

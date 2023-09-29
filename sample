@@ -1,1 +1,9 @@
+// JavaScript for post interaction
+const posts = document.querySelectorAll('.post');
 
+// Add click event listeners to each post
+posts.forEach((post) => {
+    post.addEventListener('click', () => {
+      
+    });
+});
