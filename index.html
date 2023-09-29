@@ -4,12 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="movie-header">
-        <h1>Welcome to Movie Magic</h1>
+        <div class="header-logo">
+            <img src="logo.png" alt="Movie Magic Logo">
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Genres</a></li>
+                <li><a href="#">Actors</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-search">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
     </header>
+
+    <!-- Rest of your website content goes here -->
 
     <section class="movie-content">
         <div class="movie-post" id="movie1">

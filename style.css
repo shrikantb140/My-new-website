@@ -9,35 +9,61 @@
 .movie-header {
     background-color: #1a1a1a;
     color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-
-/* Style the movie content section */
-.movie-content {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
 }
 
-/* Style each movie post */
-.movie-post {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+/* Style the logo */
+.header-logo img {
+    max-width: 150px;
+}
+
+/* Style the navigation menu */
+.header-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.header-nav li {
+    margin-right: 20px;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+    color: #ff6f61;
+}
+
+/* Style the search bar */
+.header-search {
+    display: flex;
+    align-items: center;
+}
+
+.header-search input[type="text"] {
+    padding: 10px;
+    border: none;
     border-radius: 5px;
-    padding: 20px;
-    text-align: center;
-    max-width: 300px;
+    margin-right: 10px;
 }
 
-.movie-post img {
-    max-width: 100%;
+.header-search button {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-/* Style movie titles */
-.movie-title {
-    margin-top: 10px;
-    font-size: 18px;
+.header-search button:hover {
+    background-color: #ff4d3d;
 }
