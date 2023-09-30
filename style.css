@@ -18,7 +18,7 @@
 
 /* Style the logo */
 .header-logo img {
-    max-width: 150px;
+    max-width: 120px;
 }
 
 /* Style the navigation menu */
@@ -89,7 +89,7 @@
 }
 
 .header-search input[type="text"] {
-    padding: 10px;
+    padding: 8px;
     border: none;
     border-radius: 5px;
     margin-right: 10px;
