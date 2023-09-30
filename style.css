@@ -41,6 +41,42 @@
     color: #ff6f61;
 }
 
+/* Hamburger icon for mobile */
+.mobile-menu-toggle {
+    display: none; /* Hidden by default on desktop */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+    .navbar {
+        display: none; /* Hide the navigation menu by default on mobile */
+    }
+
+    .mobile-menu-toggle {
+        display: flex; /* Display the hamburger icon on mobile */
+    }
+
+    .navbar.show-menu {
+        display: block; /* Show the navigation menu when the show-menu class is applied */
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #1a1a1a;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
 /* Style the search bar */
 .header-search {
     display: flex;
@@ -133,27 +169,3 @@
     }
 }
 
-/* Reduce header height on mobile */
-@media (max-width: 600px) {
-    .movie-header {
-            padding: 10px; /* Adjust padding as needed */
-                }
-                    
-                        /* Style for the responsive navigation menu */
-                            .navbar ul {
-                                    display: none;
-                                            position: absolute;
-                                                    top: 60px; /* Adjust the top position based on your header height */
-                                                            left: 0;
-                                                                    background-color: #1a1a1a;
-                                                                            width: 100%;
-                                                                                    text-align: center;
-                                                                                        }
-
-                                                                                            .navbar.show-menu ul {
-                                                                                                    display: block;
-                                                                                                        }
-
-                                                                                                            .navbar ul li {
-                                                                                                                    margin: 10px 0;
-                                                                                                                        }
