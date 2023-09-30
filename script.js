@@ -9,3 +9,15 @@ moviePosts.forEach((post) => {
         content.classList.toggle('show-content');
     });
 });
+
+// JavaScript for mobile menu toggle
+const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+const navbar = document.querySelector('.navbar');
+
+// Function to toggle the menu
+function toggleMenu() {
+    navbar.classList.toggle('show-menu');
+}
+
+mobileMenuToggle.addEventListener('click', toggleMenu);
+mobileMenuToggle.addEventListener('touchstart', toggleMenu);
