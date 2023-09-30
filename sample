@@ -7,12 +7,13 @@
 
 /* Style the header */
 .movie-header {
-    background-color: #1a1a1a;
-    color: #fff;
+    background-color: #343a40; /* Dark background color */
+    color: #fff; /* Light text color */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
 /* Style the logo */
@@ -32,26 +33,27 @@
 
 .navbar a {
     text-decoration: none;
-    color: #fff;
+    color: #fff; /* Light text color */
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-    color: #ff6f61;
+    color: #ff6f61; /* Highlight color on hover */
 }
 
 /* Hamburger icon for mobile */
 .mobile-menu-toggle {
-    display: none; /* Hidden by default on desktop */
+    display: flex; /* Displayed by default on mobile */
     flex-direction: column;
     cursor: pointer;
+    margin-right: 20px; /* Add some spacing between the hamburger icon and logo */
 }
 
 .bar {
     width: 25px;
     height: 3px;
-    background-color: #fff;
+    background-color: #fff; /* Light color for bars */
     margin: 3px 0;
 }
 
@@ -70,7 +72,7 @@
         position: absolute;
         top: 70px;
         left: 0;
-        background-color: #1a1a1a;
+        background-color: #343a40; /* Dark background color */
         width: 100%;
         text-align: center;
     }
