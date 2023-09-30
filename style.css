@@ -46,6 +46,7 @@
     display: none; /* Hidden by default on desktop */
     flex-direction: column;
     cursor: pointer;
+    margin-right: 20px;
 }
 
 .bar {
@@ -63,6 +64,9 @@
 
     .mobile-menu-toggle {
         display: flex; /* Display the hamburger icon on mobile */
+        
+
+
     }
 
     .navbar.show-menu {
